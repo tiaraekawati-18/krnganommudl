@@ -636,3 +636,29 @@ Accent   : #38bdf8
     }
 }
 
+/* =========================
+   WELCOME TOAST
+========================= */
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(37, 99, 235, 0.95);
+    color: white;
+    padding: 14px 22px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-weight: 600;
+    z-index: 9999;
+
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.toast.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
